@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sales Order Management</title>
+
+	<!--
+		The bootstrap: it loads the UI5 framework and configures how it starts.
+		The highlighted blanks are yours to fill in - read the task text first so
+		you understand each one. "src" (the loader) is already provided.
+	-->
+	<script
+		id="sap-ui-bootstrap"
+		src="resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_horizon"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-resourceroots='{ "ui5.sales": "./" }'
+		data-sap-ui-onInit="module:ui5/sales/index">
+	</script>
+</head>
+
+<!--
+	The framework renders our controls into the element whose id is "content".
+	The CSS class "sapUiBody" applies UI5's base page styling.
+-->
+<body class="sapUiBody" id="content">
+</body>
+</html>

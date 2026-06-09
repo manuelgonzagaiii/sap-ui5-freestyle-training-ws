@@ -1,0 +1,31 @@
+/.idea
+/.junie
+
+# OS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# UI5 Tooling / build output
+dist/
+.ui5/
+*.tsbuildinfo
+
+# CAP / SQLite local artifacts (added from Lesson 15)
+gen/
+*.sqlite
+*.db
+
+# Test / coverage
+coverage/
+.nyc_output/
+/CLAUDE.md
+
+# EduTools generated artifacts (course archives + preview/study projects)
+.coursecreator/
+course_preview*/
+*.zip
+*-ijignore

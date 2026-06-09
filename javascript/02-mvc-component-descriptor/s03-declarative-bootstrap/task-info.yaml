@@ -1,0 +1,21 @@
+type: edu
+custom_name: Stage 3 - Declarative component bootstrap
+files:
+  - name: webapp/index.html
+    visible: true
+    placeholders:
+      - offset: 356
+        length: 35
+        placeholder_text: "the component bootstrapper module"
+  - name: webapp/index.js
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

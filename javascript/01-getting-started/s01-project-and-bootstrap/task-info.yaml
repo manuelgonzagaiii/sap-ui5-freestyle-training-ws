@@ -1,0 +1,32 @@
+type: edu
+custom_name: Stage 1 - The project and the bootstrap
+files:
+  - name: webapp/index.html
+    visible: true
+    placeholders:
+      - offset: 409
+        length: 11
+        placeholder_text: theme name
+      - offset: 442
+        length: 5
+        placeholder_text: library name(s)
+      - offset: 478
+        length: 4
+        placeholder_text: compatibility version
+      - offset: 505
+        length: 4
+        placeholder_text: true or false
+      - offset: 540
+        length: 21
+        placeholder_text: namespace-to-folder map (JSON)
+      - offset: 585
+        length: 22
+        placeholder_text: startup module
+  - name: webapp/index.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

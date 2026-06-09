@@ -1,0 +1,10 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<App>
+		<Page title="Sales Orders">
+			<Button text="Say hello" />
+		</Page>
+	</App>
+</mvc:View>

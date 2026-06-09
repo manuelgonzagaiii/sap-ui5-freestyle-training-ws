@@ -1,0 +1,25 @@
+type: edu
+custom_name: Stage 2 - The app descriptor (manifest.json)
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/index.js
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+    placeholders:
+      - offset: 215
+        length: 4
+        placeholder_text: "where the Component reads its config"
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+    placeholders:
+      - offset: 52
+        length: 9
+        placeholder_text: "your app id"
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

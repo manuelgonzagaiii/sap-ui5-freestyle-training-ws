@@ -1,0 +1,8 @@
+type: framework
+custom_name: 04 · Controls & Libraries
+content:
+  - s01-page-frame
+  - s02-input-controls
+  - s03-associations
+  - s04-toolbars-and-actions
+is_template_based: false

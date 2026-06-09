@@ -1,0 +1,5 @@
+type: framework
+custom_name: "11 · Dialogs, Popovers & Messaging"
+content:
+  - s01-overview
+is_template_based: false

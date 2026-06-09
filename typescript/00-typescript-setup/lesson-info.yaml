@@ -1,0 +1,5 @@
+type: framework
+custom_name: 00 · TypeScript Setup & Tooling
+content:
+  - s01-overview
+is_template_based: false

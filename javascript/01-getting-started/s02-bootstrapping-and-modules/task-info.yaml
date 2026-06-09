@@ -1,0 +1,20 @@
+type: edu
+custom_name: Stage 2 - Your first control
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/index.js
+    visible: true
+    placeholders:
+      - offset: 18
+        length: 10
+        placeholder_text: "control module path"
+      - offset: 119
+        length: 7
+        placeholder_text: "render-target id"
+  - name: webapp/manifest.json
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

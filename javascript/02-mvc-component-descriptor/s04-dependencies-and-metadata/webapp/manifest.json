@@ -1,0 +1,38 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "ui5.sales",
+    "type": "application",
+    "title": "Sales Order Management",
+    "description": "Manage products, sales orders and customers",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "rootView": {
+      "viewName": "ui5.sales.view.App",
+      "type": "XML",
+      "id": "app"
+    }
+  }
+}

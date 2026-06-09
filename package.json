@@ -1,0 +1,13 @@
+{
+  "name": "ui5-sales-training",
+  "private": true,
+  "description": "SAPUI5 Freestyle guided project - course tooling (Jest grader + UI5 tooling)",
+  "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "@ui5/cli": "^4.0.0",
+    "jest": "^29.3.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

@@ -1,0 +1,8 @@
+type: framework
+custom_name: 01 · Getting Started
+content:
+  - s01-project-and-bootstrap
+  - s02-bootstrapping-and-modules
+  - s03-your-first-control
+  - s04-app-shell-and-tooling
+is_template_based: false

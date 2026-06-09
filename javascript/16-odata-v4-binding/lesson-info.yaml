@@ -1,0 +1,5 @@
+type: framework
+custom_name: 16 · OData V4 Binding
+content:
+  - s01-overview
+is_template_based: false

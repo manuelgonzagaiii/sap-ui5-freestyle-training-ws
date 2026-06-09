@@ -1,0 +1,25 @@
+type: edu
+custom_name: Stage 1 - Your first controller
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 27
+        length: 24
+        placeholder_text: "the controller's name"
+  - name: webapp/controller/App.controller.js
+    visible: true
+    placeholders:
+      - offset: 197
+        length: 51
+        placeholder_text: "give the user feedback"
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

@@ -1,0 +1,38 @@
+<mvc:View
+	controllerName="ui5.sales.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	displayBlock="true">
+	<App>
+		<Page>
+			<customHeader>
+				<Bar>
+					<contentMiddle>
+						<Title text="Sales Orders" level="H1" />
+					</contentMiddle>
+				</Bar>
+			</customHeader>
+			<content>
+				<Text text="{/appTitle}" class="sapUiSmallMargin" />
+				<Label text="Customer" labelFor="customerInput" class="sapUiSmallMarginBegin" />
+				<Input id="customerInput" placeholder="Type a customer name" change=".onInputChange" class="sapUiSmallMargin" />
+				<Select id="prioritySelect" class="sapUiSmallMargin">
+					<items>
+						<core:Item key="low" text="Low" />
+						<core:Item key="high" text="High" />
+					</items>
+				</Select>
+				<CheckBox text="Urgent" class="sapUiSmallMargin" />
+				<Button id="helloButton" text="Say hello" press=".onShowHello" class="sapUiSmallMargin" />
+			</content>
+			<footer>
+				<OverflowToolbar>
+					<ToolbarSpacer />
+					<Button text="Create" type="Emphasized" press=".onCreate" />
+					<Button text="Refresh" icon="sap-icon://refresh" />
+				</OverflowToolbar>
+			</footer>
+		</Page>
+	</App>
+</mvc:View>

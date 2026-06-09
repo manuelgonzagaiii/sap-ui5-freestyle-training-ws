@@ -1,0 +1,11 @@
+<mvc:View
+	controllerName="ui5.sales.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<App>
+		<Page title="Sales Orders">
+			<Button text="Say hello" press=".onShowHello" />
+		</Page>
+	</App>
+</mvc:View>

@@ -1,0 +1,8 @@
+type: framework
+custom_name: 03 · Views & Controllers
+content:
+  - s01-first-controller
+  - s02-lifecycle-and-byid
+  - s03-feeding-the-view-data
+  - s04-reading-event-data
+is_template_based: false

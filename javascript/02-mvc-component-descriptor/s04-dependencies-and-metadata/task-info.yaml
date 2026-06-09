@@ -1,0 +1,24 @@
+type: edu
+custom_name: Stage 4 - Dependencies and app metadata
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/index.js
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+    placeholders:
+      - offset: 105
+        length: 22
+        placeholder_text: "the app title (your choice)"
+      - offset: 457
+        length: 7
+        placeholder_text: "minimum UI5 version"
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

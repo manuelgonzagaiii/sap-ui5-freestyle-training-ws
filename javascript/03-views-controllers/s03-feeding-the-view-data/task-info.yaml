@@ -1,0 +1,28 @@
+type: edu
+custom_name: Stage 3 - Feeding the view data
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 171
+        length: 11
+        placeholder_text: "bind to a model property"
+  - name: webapp/controller/App.controller.js
+    visible: true
+    placeholders:
+      - offset: 350
+        length: 8
+        placeholder_text: "attach the model to the view"
+      - offset: 281
+        length: 22
+        placeholder_text: "any starting value you like"
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

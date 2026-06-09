@@ -1,0 +1,24 @@
+type: edu
+custom_name: Stage 2 - The controller lifecycle and byId
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/controller/App.controller.js
+    visible: true
+    placeholders:
+      - offset: 432
+        length: 11
+        placeholder_text: "the button's id (look in the view)"
+      - offset: 398
+        length: 5
+        placeholder_text: "move keyboard focus to it"
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

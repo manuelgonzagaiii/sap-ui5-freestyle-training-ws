@@ -1,0 +1,34 @@
+type: marketplace
+title: SAPUI5 Freestyle — Guided Project (Sales Order Management)
+language: English
+summary: |-
+  A hands-on, guided project that takes you from the very basics of SAPUI5
+  Freestyle to its most advanced and rarely-used features. You will build one
+  real SAP-style business app — Sales Order Management (Products, Sales Orders,
+  Customers) — growing it lesson by lesson with a Fiori user experience.
+
+  Two parallel tracks are provided: JavaScript and TypeScript. The backend uses
+  only free, open-source tooling a trainee can run locally — the UI5 mock server
+  early on, then SAP CAP with SQLite for real OData V4 (drafts, batch,
+  annotations). No S/4HANA or paid satellite systems are required.
+
+  Prerequisites: solid JavaScript and (for the TS track) TypeScript. These
+  languages are NOT taught here.
+vendor:
+  name: SAPUI5 Freestyle Training
+  email: manuelgonzagaiii@gmail.com
+programming_language: JavaScript
+content:
+  - Welcome
+  - javascript
+  - typescript
+tags:
+  - SAPUI5
+  - OpenUI5
+  - Fiori
+  - OData
+  - TypeScript
+additional_files:
+  - name: package.json
+  - name: package-lock.json
+yaml_version: 5

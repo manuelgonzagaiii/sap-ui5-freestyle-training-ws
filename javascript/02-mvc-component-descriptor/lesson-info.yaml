@@ -1,0 +1,8 @@
+type: framework
+custom_name: 02 · Component & App Descriptor (MVC)
+content:
+  - s01-component-and-root-view
+  - s02-app-descriptor
+  - s03-declarative-bootstrap
+  - s04-dependencies-and-metadata
+is_template_based: false

@@ -1,0 +1,20 @@
+type: edu
+custom_name: Stage 3 - Handling user interaction
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/index.js
+    visible: true
+    placeholders:
+      - offset: 35
+        length: 18
+        placeholder_text: "feedback module path"
+      - offset: 157
+        length: 51
+        placeholder_text: "what happens on press"
+  - name: webapp/manifest.json
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false
