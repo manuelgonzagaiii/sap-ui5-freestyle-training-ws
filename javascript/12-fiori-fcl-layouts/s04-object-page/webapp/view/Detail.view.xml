@@ -1,0 +1,24 @@
+<mvc:View controllerName="ui5.sales.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:uxap="sap.uxap" xmlns:core="sap.ui.core" displayBlock="true">
+	<uxap:ObjectPageLayout id="objectPage" showTitleInHeaderContent="true">
+		<uxap:headerTitle>
+			<uxap:ObjectPageHeader objectTitle="{customer}" objectSubtitle="{orderId}">
+				<uxap:actions>
+					<uxap:ObjectPageHeaderActionButton text="{i18n>closeButton}" icon="sap-icon://decline" press=".onClose" />
+				</uxap:actions>
+			</uxap:ObjectPageHeader>
+		</uxap:headerTitle>
+		<uxap:ObjectPageSection title="{i18n>generalSection}">
+			<uxap:ObjectPageSubSection>
+				<MessageStrip text="This order has been cancelled" type="Warning" showIcon="true" visible="{= ${status} === 'Cancelled' }" class="sapUiSmallMarginBottom" />
+				<ObjectStatus text="{status}" state="{ path: 'status', formatter: '.formatter.statusState' }" />
+				<Text text="{ parts: ['amount', 'currency'], type: 'sap.ui.model.type.Currency' }" />
+				<Text text="{ path: 'orderDate', type: 'sap.ui.model.type.Date', formatOptions: { source: { pattern: 'yyyy-MM-dd' }, style: 'long' } }" />
+			</uxap:ObjectPageSubSection>
+		</uxap:ObjectPageSection>
+		<uxap:ObjectPageSection title="{i18n>itemsSection}">
+			<uxap:ObjectPageSubSection>
+				<Text text="{ path: 'itemCount', type: 'ui5.sales.model.ItemCountType' }" />
+			</uxap:ObjectPageSubSection>
+		</uxap:ObjectPageSection>
+	</uxap:ObjectPageLayout>
+</mvc:View>

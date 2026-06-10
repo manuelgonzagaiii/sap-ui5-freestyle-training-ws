@@ -1,0 +1,4 @@
+sap.ui.define([], () => {
+	"use strict";
+	return { statusState(s) { switch (s) { case "Completed": return "Success"; case "In Process": return "Warning"; case "Cancelled": return "Error"; default: return "None"; } } };
+});

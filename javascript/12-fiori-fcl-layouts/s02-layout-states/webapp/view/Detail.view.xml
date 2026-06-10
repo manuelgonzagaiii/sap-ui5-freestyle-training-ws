@@ -1,0 +1,17 @@
+<mvc:View controllerName="ui5.sales.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" displayBlock="true">
+	<Page title="{i18n>detailTitle}" showNavButton="true" navButtonPress=".onClose">
+		<content>
+			<MessageStrip text="This order has been cancelled" type="Warning" showIcon="true" visible="{= ${status} === 'Cancelled' }" class="sapUiSmallMargin" />
+			<core:Fragment fragmentName="ui5.sales.view.fragment.OrderHeader" type="XML" />
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<Button text="{i18n>fullScreenButton}" icon="sap-icon://full-screen" press=".onFullScreen" />
+				<Button text="{i18n>closeButton}" icon="sap-icon://decline" press=".onClose" />
+				<ToolbarSpacer />
+				<Button text="{i18n>reloadButton}" icon="sap-icon://refresh" press=".onReload" />
+				<Button text="{i18n>deleteButton}" icon="sap-icon://delete" type="Reject" press=".onDeleteOrder" />
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
