@@ -1,5 +1,8 @@
 type: framework
 custom_name: 09 · Routing & Navigation
 content:
-  - s01-overview
+  - s01-configure-routing
+  - s02-navigate-to-detail
+  - s03-bind-by-parameter
+  - s04-back-and-not-found
 is_template_based: false

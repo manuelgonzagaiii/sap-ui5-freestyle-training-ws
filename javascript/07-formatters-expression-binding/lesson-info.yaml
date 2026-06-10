@@ -1,5 +1,8 @@
 type: framework
 custom_name: "07 · Formatters, Types & Expression Binding"
 content:
-  - s01-overview
+  - s01-formatter-functions
+  - s02-expression-binding
+  - s03-composite-binding
+  - s04-custom-data-type
 is_template_based: false

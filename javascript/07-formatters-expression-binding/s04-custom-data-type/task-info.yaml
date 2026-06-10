@@ -1,0 +1,27 @@
+type: edu
+custom_name: Stage 4 - Custom data type
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/salesOrders.json
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 2045
+        length: 29
+        placeholder_text: "your custom type"
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: test/test.js
+    visible: false

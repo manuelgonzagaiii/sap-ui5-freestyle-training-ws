@@ -1,0 +1,46 @@
+<mvc:View
+	controllerName="ui5.sales.controller.List"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	displayBlock="true">
+	<Page title="{i18n>pageTitle}">
+		<content>
+			<l:Grid defaultSpan="XL3 L3 M6 S12" hSpacing="1" vSpacing="1" class="sapUiSmallMargin">
+					<VBox class="sapUiSmallMargin">
+						<Title text="{/kpi/open}" level="H2" />
+						<Text text="{i18n>openLabel}" />
+					</VBox>
+					<VBox class="sapUiSmallMargin">
+						<Title text="{/kpi/inProcess}" level="H2" />
+						<Text text="{i18n>inProcessLabel}" />
+					</VBox>
+					<VBox class="sapUiSmallMargin">
+						<Title text="{/kpi/completed}" level="H2" />
+						<Text text="{i18n>completedLabel}" />
+					</VBox>
+					<VBox class="sapUiSmallMargin">
+						<Title text="{/kpi/revenue}" level="H2" />
+						<Text text="{i18n>revenueLabel}" />
+					</VBox>
+			</l:Grid>
+			<SearchField search=".onSearch" placeholder="{i18n>searchPlaceholder}" class="sapUiResponsiveMargin" width="20rem" />
+			<List id="ordersList" headerText="{i18n>ordersListTitle}" items="{ path: '/salesOrders', sorter: { path: 'orderDate', descending: true } }" class="sapUiResponsiveMargin">
+				<ObjectListItem title="{customer}" number="{ parts: ['amount', 'currency'], type: 'sap.ui.model.type.Currency', formatOptions: { showMeasure: false } }" numberUnit="{currency}" type="Inactive" highlight="{= ${priority} === 'High' ? 'Error' : 'None' }">
+					<firstStatus>
+						<ObjectStatus text="{status}" state="{ path: 'status', formatter: '.formatter.statusState' }" />
+					</firstStatus>
+					<attributes>
+						<ObjectAttribute text="{orderId}" />
+					</attributes>
+				</ObjectListItem>
+			</List>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer />
+				<Button text="{i18n>createButton}" type="Emphasized" press=".onCreate" />
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

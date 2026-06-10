@@ -1,0 +1,37 @@
+type: edu
+custom_name: Stage 1 - The i18n bundle and ResourceModel
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+    placeholders:
+      - offset: 706
+        length: 19
+        placeholder_text: "where the translated texts live"
+  - name: webapp/model/salesOrders.json
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: webapp/i18n/i18n.properties
+    visible: true
+    placeholders:
+      - offset: 172
+        length: 12
+        placeholder_text: "the page title text (your wording)"
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 228
+        length: 16
+        placeholder_text: "the translated page title"
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false
