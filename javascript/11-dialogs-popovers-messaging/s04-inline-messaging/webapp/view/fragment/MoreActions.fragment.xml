@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ActionSheet id="moreActionSheet">
+		<Button text="{i18n>editAction}" icon="sap-icon://edit" press=".onEditOrder" />
+		<Button text="{i18n>duplicateAction}" icon="sap-icon://copy" press=".onDuplicateOrder" />
+	</ActionSheet>
+</core:FragmentDefinition>

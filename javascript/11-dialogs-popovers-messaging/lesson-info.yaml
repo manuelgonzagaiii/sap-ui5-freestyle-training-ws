@@ -1,5 +1,8 @@
 type: framework
-custom_name: "11 · Dialogs, Popovers & Messaging"
+custom_name: 11 · Dialogs, Popovers & Messaging
 content:
-  - s01-overview
+  - s01-confirmation-messagebox
+  - s02-action-sheet
+  - s03-busy-indication
+  - s04-inline-messaging
 is_template_based: false

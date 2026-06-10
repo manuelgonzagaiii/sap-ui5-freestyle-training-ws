@@ -1,0 +1,26 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "ui5.sales", "type": "application", "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}", "description": "{{appDescription}}",
+    "applicationVersion": { "version": "1.0.0" }
+  },
+  "sap.ui": { "technology": "UI5", "deviceTypes": { "desktop": true, "tablet": true, "phone": true } },
+  "sap.ui5": {
+    "dependencies": { "minUI5Version": "1.120.0", "libs": { "sap.ui.core": {}, "sap.m": {}, "sap.ui.layout": {} } },
+    "contentDensities": { "compact": true, "cozy": true },
+    "models": {
+      "i18n": { "type": "sap.ui.model.resource.ResourceModel", "settings": { "bundleName": "ui5.sales.i18n.i18n", "supportedLocales": ["", "de"], "fallbackLocale": "" } },
+      "": { "type": "sap.ui.model.json.JSONModel", "uri": "model/salesOrders.json" }
+    },
+    "routing": {
+      "config": { "routerClass": "sap.m.routing.Router", "type": "View", "viewType": "XML", "path": "ui5.sales.view", "controlId": "app", "controlAggregation": "pages", "async": true, "bypassed": { "target": "notFound" } },
+      "routes": [
+        { "name": "list", "pattern": "", "target": "list" },
+        { "name": "detail", "pattern": "orders/{orderIndex}", "target": "detail" }
+      ],
+      "targets": { "list": { "id": "list", "name": "List" }, "detail": { "id": "detail", "name": "Detail" }, "notFound": { "id": "notFound", "name": "NotFound" } }
+    },
+    "rootView": { "viewName": "ui5.sales.view.App", "type": "XML", "id": "app" }
+  }
+}

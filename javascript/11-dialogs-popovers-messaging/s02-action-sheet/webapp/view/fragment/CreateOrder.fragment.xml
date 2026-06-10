@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="createOrderDialog" title="{i18n>newOrderTitle}">
+		<content><VBox class="sapUiSmallMargin"><Label text="{i18n>customerLabel}" labelFor="newCustomerInput" /><Input id="newCustomerInput" /></VBox></content>
+		<beginButton><Button text="{i18n>saveButton}" type="Emphasized" press=".onSaveOrder" /></beginButton>
+		<endButton><Button text="{i18n>cancelButton}" press=".onCancelOrder" /></endButton>
+	</Dialog>
+</core:FragmentDefinition>
