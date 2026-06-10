@@ -1,0 +1,43 @@
+type: edu
+custom_name: Stage 4 - Fragment id scoping
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/salesOrders.json
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: webapp/i18n/i18n.properties
+    visible: true
+  - name: webapp/i18n/i18n_de.properties
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/view/NotFound.view.xml
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: webapp/view/List.view.xml
+    visible: true
+  - name: webapp/controller/List.controller.js
+    visible: true
+    placeholders:
+      - offset: 1383
+        length: 24
+        placeholder_text: "the dialog's input, by its id"
+  - name: webapp/view/Detail.view.xml
+    visible: true
+  - name: webapp/controller/Detail.controller.js
+    visible: true
+  - name: webapp/view/fragment/OrderHeader.fragment.xml
+    visible: true
+  - name: webapp/view/fragment/CreateOrder.fragment.xml
+    visible: true
+  - name: test/test.js
+    visible: false

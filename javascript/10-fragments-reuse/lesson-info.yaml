@@ -1,5 +1,8 @@
 type: framework
 custom_name: 10 · Fragments & UI Reuse
 content:
-  - s01-overview
+  - s01-xml-fragments
+  - s02-dialog-fragment
+  - s03-caching-fragments
+  - s04-fragment-id-scoping
 is_template_based: false

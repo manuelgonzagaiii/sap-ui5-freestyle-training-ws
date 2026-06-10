@@ -1,0 +1,43 @@
+type: edu
+custom_name: Stage 2 - A dialog as a fragment
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/salesOrders.json
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: webapp/i18n/i18n.properties
+    visible: true
+  - name: webapp/i18n/i18n_de.properties
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/view/NotFound.view.xml
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: webapp/view/List.view.xml
+    visible: true
+  - name: webapp/controller/List.controller.js
+    visible: true
+    placeholders:
+      - offset: 1051
+        length: 35
+        placeholder_text: "the dialog fragment to load"
+  - name: webapp/view/Detail.view.xml
+    visible: true
+  - name: webapp/controller/Detail.controller.js
+    visible: true
+  - name: webapp/view/fragment/OrderHeader.fragment.xml
+    visible: true
+  - name: webapp/view/fragment/CreateOrder.fragment.xml
+    visible: true
+  - name: test/test.js
+    visible: false
