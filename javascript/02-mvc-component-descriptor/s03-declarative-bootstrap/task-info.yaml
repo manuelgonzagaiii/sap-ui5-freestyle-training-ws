@@ -6,7 +6,7 @@ files:
     placeholders:
       - offset: 356
         length: 35
-        placeholder_text: "the component bootstrapper module"
+        placeholder_text: the component bootstrapper module
   - name: webapp/index.js
     visible: true
   - name: webapp/Component.js

@@ -12,10 +12,10 @@ files:
     placeholders:
       - offset: 165
         length: 12
-        placeholder_text: "the page's header aggregation"
+        placeholder_text: the page's header aggregation
       - offset: 229
         length: 12
-        placeholder_text: "the header title (your choice)"
+        placeholder_text: the header title (your choice)
   - name: webapp/controller/App.controller.js
     visible: true
   - name: ui5.yaml

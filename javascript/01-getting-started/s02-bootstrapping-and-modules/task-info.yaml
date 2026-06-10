@@ -8,10 +8,10 @@ files:
     placeholders:
       - offset: 18
         length: 10
-        placeholder_text: "control module path"
+        placeholder_text: control module path
       - offset: 119
         length: 7
-        placeholder_text: "render-target id"
+        placeholder_text: render-target id
   - name: webapp/manifest.json
     visible: true
   - name: ui5.yaml

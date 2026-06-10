@@ -12,16 +12,16 @@ files:
     placeholders:
       - offset: 171
         length: 11
-        placeholder_text: "bind to a model property"
+        placeholder_text: bind to a model property
   - name: webapp/controller/App.controller.js
     visible: true
     placeholders:
-      - offset: 350
-        length: 8
-        placeholder_text: "attach the model to the view"
       - offset: 281
         length: 22
-        placeholder_text: "any starting value you like"
+        placeholder_text: any starting value you like
+      - offset: 350
+        length: 8
+        placeholder_text: attach the model to the view
   - name: ui5.yaml
     visible: true
   - name: test/test.js

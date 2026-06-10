@@ -1,0 +1,26 @@
+type: edu
+custom_name: Stage 1 - Models and aggregation binding
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/salesOrders.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 1029
+        length: 12
+        placeholder_text: the collection to bind to
+      - offset: 1103
+        length: 10
+        placeholder_text: each order's customer (relative path)
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

@@ -1,0 +1,45 @@
+<mvc:View
+	controllerName="ui5.sales.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	displayBlock="true">
+	<App>
+		<Page>
+			<customHeader>
+				<Bar>
+					<contentMiddle>
+						<Title text="Sales Orders" level="H1" />
+					</contentMiddle>
+				</Bar>
+			</customHeader>
+			<content>
+				<l:Grid defaultSpan="XL3 L3 M6 S12" hSpacing="1" vSpacing="1" class="sapUiSmallMargin">
+				<VBox class="sapUiSmallMargin">
+					<Title text="{/kpi/open}" level="H2" />
+					<Text text="Open orders" />
+				</VBox>
+				<VBox class="sapUiSmallMargin">
+					<Title text="{/kpi/inProcess}" level="H2" />
+					<Text text="In process" />
+				</VBox>
+				<VBox class="sapUiSmallMargin">
+					<Title text="{/kpi/completed}" level="H2" />
+					<Text text="Completed" />
+				</VBox>
+				<VBox class="sapUiSmallMargin">
+					<Title text="{/kpi/revenue}" level="H2" />
+					<Text text="Revenue" />
+				</VBox>
+				</l:Grid>
+			</content>
+			<footer>
+				<OverflowToolbar>
+					<ToolbarSpacer />
+					<Button text="Create" type="Emphasized" press=".onCreate" />
+					<Button id="refreshButton" text="Refresh" icon="sap-icon://refresh" />
+				</OverflowToolbar>
+			</footer>
+		</Page>
+	</App>
+</mvc:View>

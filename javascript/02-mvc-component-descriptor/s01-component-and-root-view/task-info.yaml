@@ -10,16 +10,16 @@ files:
     placeholders:
       - offset: 18
         length: 23
-        placeholder_text: "base class to extend"
+        placeholder_text: base class to extend
       - offset: 231
         length: 18
-        placeholder_text: "the root view's name"
+        placeholder_text: the root view's name
   - name: webapp/view/App.view.xml
     visible: true
     placeholders:
       - offset: 98
         length: 12
-        placeholder_text: "page title (your choice)"
+        placeholder_text: page title (your choice)
   - name: webapp/manifest.json
     visible: true
   - name: ui5.yaml

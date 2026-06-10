@@ -1,5 +1,8 @@
 type: framework
 custom_name: 05 · Layouts & Responsiveness
 content:
-  - s01-overview
+  - s01-flex-layout
+  - s02-flex-alignment
+  - s03-responsive-grid
+  - s04-device-and-adaptation
 is_template_based: false

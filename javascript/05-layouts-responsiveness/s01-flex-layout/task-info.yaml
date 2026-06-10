@@ -1,0 +1,21 @@
+type: edu
+custom_name: "Stage 1 - Flex layout (FlexBox, VBox, HBox)"
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 320
+        length: 3
+        placeholder_text: Row or Column
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

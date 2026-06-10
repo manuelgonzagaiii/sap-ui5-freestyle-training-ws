@@ -12,13 +12,13 @@ files:
     placeholders:
       - offset: 27
         length: 24
-        placeholder_text: "the controller's name"
+        placeholder_text: the controller's name
   - name: webapp/controller/App.controller.js
     visible: true
     placeholders:
       - offset: 197
         length: 51
-        placeholder_text: "give the user feedback"
+        placeholder_text: give the user feedback
   - name: ui5.yaml
     visible: true
   - name: test/test.js

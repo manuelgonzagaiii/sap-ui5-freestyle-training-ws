@@ -12,10 +12,10 @@ files:
     placeholders:
       - offset: 560
         length: 5
-        placeholder_text: "the aggregation that holds the options"
+        placeholder_text: the aggregation that holds the options
       - offset: 699
         length: 6
-        placeholder_text: "the checkbox label (your choice)"
+        placeholder_text: the checkbox label (your choice)
   - name: webapp/controller/App.controller.js
     visible: true
   - name: ui5.yaml

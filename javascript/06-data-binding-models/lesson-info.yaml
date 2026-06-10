@@ -1,5 +1,8 @@
 type: framework
 custom_name: 06 · Data Binding & Models
 content:
-  - s01-overview
+  - s01-aggregation-binding
+  - s02-element-binding
+  - s03-sorting
+  - s04-filtering-search
 is_template_based: false

@@ -8,7 +8,7 @@ files:
     placeholders:
       - offset: 324
         length: 12
-        placeholder_text: "the page title (your choice)"
+        placeholder_text: the page title (your choice)
   - name: webapp/manifest.json
     visible: true
   - name: ui5.yaml

@@ -1,0 +1,25 @@
+type: edu
+custom_name: Stage 4 - Adapting to the device
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 1156
+        length: 24
+        placeholder_text: show only when not on a phone
+  - name: webapp/controller/App.controller.js
+    visible: true
+    placeholders:
+      - offset: 555
+        length: 19
+        placeholder_text: is this a phone?
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

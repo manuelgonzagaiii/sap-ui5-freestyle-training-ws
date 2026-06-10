@@ -12,10 +12,10 @@ files:
     placeholders:
       - offset: 969
         length: 13
-        placeholder_text: "pushes the actions to the right"
+        placeholder_text: pushes the actions to the right
       - offset: 1005
         length: 6
-        placeholder_text: "the main action's label (your choice)"
+        placeholder_text: the main action's label (your choice)
   - name: webapp/controller/App.controller.js
     visible: true
   - name: ui5.yaml

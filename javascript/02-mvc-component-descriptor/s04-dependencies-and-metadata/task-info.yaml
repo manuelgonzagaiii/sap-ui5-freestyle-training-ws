@@ -14,10 +14,10 @@ files:
     placeholders:
       - offset: 105
         length: 22
-        placeholder_text: "the app title (your choice)"
+        placeholder_text: the app title (your choice)
       - offset: 457
         length: 7
-        placeholder_text: "minimum UI5 version"
+        placeholder_text: minimum UI5 version
   - name: ui5.yaml
     visible: true
   - name: test/test.js

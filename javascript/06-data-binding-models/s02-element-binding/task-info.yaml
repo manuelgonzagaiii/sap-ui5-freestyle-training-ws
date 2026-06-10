@@ -1,0 +1,26 @@
+type: edu
+custom_name: Stage 2 - Element binding
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/salesOrders.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/controller/App.controller.js
+    visible: true
+    placeholders:
+      - offset: 493
+        length: 17
+        placeholder_text: the pressed item's data context
+      - offset: 650
+        length: 11
+        placeholder_text: bind the detail panel to that context
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

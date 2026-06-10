@@ -1,0 +1,24 @@
+type: edu
+custom_name: Stage 2 - Flex alignment and wrapping
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+    placeholders:
+      - offset: 341
+        length: 12
+        placeholder_text: how to distribute free space
+      - offset: 380
+        length: 4
+        placeholder_text: wrap onto new lines?
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false

@@ -10,12 +10,12 @@ files:
   - name: webapp/view/App.view.xml
     visible: true
     placeholders:
-      - offset: 416
-        length: 13
-        placeholder_text: "the id of the input this label describes"
       - offset: 396
         length: 8
-        placeholder_text: "the label text (your choice)"
+        placeholder_text: the label text (your choice)
+      - offset: 416
+        length: 13
+        placeholder_text: the id of the input this label describes
   - name: webapp/controller/App.controller.js
     visible: true
   - name: ui5.yaml

@@ -12,13 +12,13 @@ files:
     placeholders:
       - offset: 265
         length: 14
-        placeholder_text: "the handler for the input's change event"
+        placeholder_text: the handler for the input's change event
   - name: webapp/controller/App.controller.js
     visible: true
     placeholders:
       - offset: 484
         length: 28
-        placeholder_text: "read the typed value from the event"
+        placeholder_text: read the typed value from the event
   - name: ui5.yaml
     visible: true
   - name: test/test.js
