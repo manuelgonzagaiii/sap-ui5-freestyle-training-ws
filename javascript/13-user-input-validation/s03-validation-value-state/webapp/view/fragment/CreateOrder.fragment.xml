@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<Dialog id="createOrderDialog" title="{i18n>newOrderTitle}">
+		<content>
+			<form:SimpleForm layout="ResponsiveGridLayout" editable="true">
+				<Label text="{i18n>customerLabel}" labelFor="newCustomerInput" required="true" />
+				<Input id="newCustomerInput" value="{ path: 'create>/customer', type: 'sap.ui.model.type.String', constraints: { minLength: 1, maxLength: 40 } }" />
+				<Label text="{i18n>amountLabel}" labelFor="newAmountInput" required="true" />
+				<Input id="newAmountInput" value="{ path: 'create>/amount', type: 'sap.ui.model.type.Float', constraints: { minimum: 0 } }" />
+				<Label text="{i18n>currencyLabel}" labelFor="newCurrencySelect" />
+				<Select id="newCurrencySelect" selectedKey="{create>/currency}">
+					<core:Item key="EUR" text="EUR" />
+					<core:Item key="USD" text="USD" />
+					<core:Item key="GBP" text="GBP" />
+				</Select>
+			</form:SimpleForm>
+		</content>
+		<beginButton><Button text="{i18n>saveButton}" type="Emphasized" press=".onSaveOrder" /></beginButton>
+		<endButton><Button text="{i18n>cancelButton}" press=".onCancelOrder" /></endButton>
+	</Dialog>
+</core:FragmentDefinition>

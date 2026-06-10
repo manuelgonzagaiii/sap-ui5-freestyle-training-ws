@@ -1,0 +1,45 @@
+type: edu
+custom_name: Stage 1 - Building a form (SimpleForm)
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/salesOrders.json
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: webapp/i18n/i18n.properties
+    visible: true
+  - name: webapp/i18n/i18n_de.properties
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: webapp/view/NotFound.view.xml
+    visible: true
+  - name: webapp/view/List.view.xml
+    visible: true
+  - name: webapp/controller/List.controller.js
+    visible: true
+  - name: webapp/view/Detail.view.xml
+    visible: true
+  - name: webapp/controller/Detail.controller.js
+    visible: true
+  - name: webapp/view/fragment/OrderHeader.fragment.xml
+    visible: true
+  - name: webapp/view/fragment/CreateOrder.fragment.xml
+    visible: true
+    placeholders:
+      - offset: 199
+        length: 20
+        placeholder_text: "the responsive form layout"
+  - name: ui5.yaml
+    visible: true
+  - name: test/test.js
+    visible: false
