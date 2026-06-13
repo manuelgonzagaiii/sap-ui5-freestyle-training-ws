@@ -1,5 +1,8 @@
 type: framework
 custom_name: 17 · CRUD & Draft Handling
 content:
-  - s01-overview
+  - s01-create-over-v4
+  - s02-edit-with-drafts
+  - s03-delete
+  - s04-side-effects
 is_template_based: false

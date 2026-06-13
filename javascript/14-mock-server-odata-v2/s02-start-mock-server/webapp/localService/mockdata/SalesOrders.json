@@ -1,0 +1,10 @@
+[
+  { "orderId": "SO-1001", "customer": "Atlas Trading", "status": "Open", "amount": "1250.50", "currency": "EUR", "orderDate": "2026-05-12", "priority": "High", "itemCount": 3 },
+  { "orderId": "SO-1002", "customer": "Bluewave Logistics", "status": "In Process", "amount": "8420.00", "currency": "EUR", "orderDate": "2026-05-09", "priority": "Medium", "itemCount": 7 },
+  { "orderId": "SO-1003", "customer": "Cedar & Co", "status": "Completed", "amount": "540.75", "currency": "USD", "orderDate": "2026-04-28", "priority": "Low", "itemCount": 2 },
+  { "orderId": "SO-1004", "customer": "Delta Manufacturing", "status": "Open", "amount": "15300.00", "currency": "EUR", "orderDate": "2026-05-14", "priority": "High", "itemCount": 12 },
+  { "orderId": "SO-1005", "customer": "Evergreen Retail", "status": "Cancelled", "amount": "320.00", "currency": "GBP", "orderDate": "2026-04-30", "priority": "Low", "itemCount": 1 },
+  { "orderId": "SO-1006", "customer": "Fjord Imports", "status": "In Process", "amount": "6750.25", "currency": "EUR", "orderDate": "2026-05-11", "priority": "Medium", "itemCount": 5 },
+  { "orderId": "SO-1007", "customer": "Granite Supplies", "status": "Completed", "amount": "2890.00", "currency": "USD", "orderDate": "2026-05-02", "priority": "Medium", "itemCount": 4 },
+  { "orderId": "SO-1008", "customer": "Harbor Foods", "status": "Open", "amount": "1180.40", "currency": "EUR", "orderDate": "2026-05-13", "priority": "High", "itemCount": 6 }
+]

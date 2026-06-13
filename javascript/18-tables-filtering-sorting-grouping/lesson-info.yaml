@@ -1,5 +1,8 @@
 type: framework
 custom_name: "18 · Tables, Filtering, Sorting & Grouping"
 content:
-  - s01-overview
+  - s01-responsive-table
+  - s02-growing-and-paging
+  - s03-sort-group-dialog
+  - s04-export-spreadsheet
 is_template_based: false

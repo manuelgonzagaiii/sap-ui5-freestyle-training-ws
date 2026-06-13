@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+	<edmx:DataServices m:DataServiceVersion="2.0"><Schema Namespace="ui5.sales" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+		<EntityType Name="SalesOrder"><Key><PropertyRef Name="orderId" /></Key>
+			<Property Name="orderId" Type="Edm.String" Nullable="false" MaxLength="10" /><Property Name="customer" Type="Edm.String" MaxLength="40" /><Property Name="status" Type="Edm.String" MaxLength="20" /><Property Name="amount" Type="Edm.Decimal" Precision="15" Scale="2" /><Property Name="currency" Type="Edm.String" MaxLength="3" /><Property Name="orderDate" Type="Edm.String" MaxLength="10" /><Property Name="priority" Type="Edm.String" MaxLength="10" /><Property Name="itemCount" Type="Edm.Int32" />
+		</EntityType>
+		<EntityContainer Name="Container" m:IsDefaultEntityContainer="true"><EntitySet Name="SalesOrders" EntityType="ui5.sales.SalesOrder" /></EntityContainer>
+	</Schema></edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,55 @@
+type: edu
+custom_name: Stage 2 - Expose an OData V4 service
+files:
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/ui.json
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: webapp/i18n/i18n.properties
+    visible: true
+  - name: webapp/i18n/i18n_de.properties
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: webapp/view/NotFound.view.xml
+    visible: true
+  - name: webapp/view/List.view.xml
+    visible: true
+  - name: webapp/controller/List.controller.js
+    visible: true
+  - name: webapp/view/Detail.view.xml
+    visible: true
+  - name: webapp/controller/Detail.controller.js
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: webapp/localService/metadata.xml
+    visible: true
+  - name: webapp/localService/mockdata/SalesOrders.json
+    visible: true
+  - name: webapp/localService/mockserver.js
+    visible: true
+  - name: db/schema.cds
+    visible: true
+  - name: srv/sales-service.cds
+    visible: true
+    placeholders:
+      - offset: 279
+        length: 14
+        placeholder_text: the schema entity to expose
+  - name: db/data/ui5.sales-SalesOrders.csv
+    visible: true
+  - name: package.json
+    visible: true
+  - name: test/test.js
+    visible: false

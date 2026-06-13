@@ -1,0 +1,22 @@
+<mvc:View controllerName="ui5.sales.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:uxap="sap.uxap" displayBlock="true">
+	<uxap:ObjectPageLayout id="objectPage" showTitleInHeaderContent="true">
+		<uxap:headerTitle><uxap:ObjectPageHeader objectTitle="{customer}" objectSubtitle="{orderId}"><uxap:actions>
+			<uxap:ObjectPageHeaderActionButton text="{i18n>saveButton}" icon="sap-icon://save" press=".onSave" />
+			<uxap:ObjectPageHeaderActionButton text="{i18n>cancelButton}" icon="sap-icon://reset" press=".onCancelEdit" />
+			<uxap:ObjectPageHeaderActionButton text="{i18n>deleteButton}" icon="sap-icon://delete" press=".onDelete" />
+			<uxap:ObjectPageHeaderActionButton text="{i18n>completeButton}" icon="sap-icon://accept" press=".onSetCompleted" />
+			<uxap:ObjectPageHeaderActionButton text="{i18n>closeButton}" icon="sap-icon://decline" press=".onClose" />
+		</uxap:actions></uxap:ObjectPageHeader></uxap:headerTitle>
+		<uxap:ObjectPageSection title="{i18n>generalSection}"><uxap:ObjectPageSubSection>
+			<Label text="{i18n>customerLabel}" />
+			<Input value="{customer}" />
+			<ObjectStatus text="{status}" state="{ path: 'status', formatter: '.formatter.statusState' }" />
+			<Text text="{ parts: ['amount', 'currency'], type: 'sap.ui.model.type.Currency' }" />
+		</uxap:ObjectPageSubSection></uxap:ObjectPageSection>
+		<uxap:ObjectPageSection title="{i18n>itemsSection}"><uxap:ObjectPageSubSection>
+			<Table items="{items}"><columns><Column><Text text="{i18n>productCol}" /></Column><Column><Text text="{i18n>quantityCol}" /></Column><Column hAlign="End"><Text text="{i18n>priceCol}" /></Column></columns>
+				<items><ColumnListItem><cells><Text text="{product}" /><Text text="{quantity}" /><Text text="{ path: 'price', type: 'sap.ui.model.type.Float', formatOptions: { minFractionDigits: 2 } }" /></cells></ColumnListItem></items>
+			</Table>
+		</uxap:ObjectPageSubSection></uxap:ObjectPageSection>
+	</uxap:ObjectPageLayout>
+</mvc:View>

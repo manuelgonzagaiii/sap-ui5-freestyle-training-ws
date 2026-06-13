@@ -1,0 +1,53 @@
+type: edu
+custom_name: Stage 1 - V4 list binding and query options
+files:
+  - name: db/schema.cds
+    visible: true
+  - name: srv/sales-service.cds
+    visible: true
+  - name: srv/sales-service.js
+    visible: true
+  - name: db/data/ui5.sales-SalesOrders.csv
+    visible: true
+  - name: db/data/ui5.sales-SalesOrderItems.csv
+    visible: true
+  - name: package.json
+    visible: true
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: webapp/model/ui.json
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: webapp/i18n/i18n.properties
+    visible: true
+  - name: webapp/i18n/i18n_de.properties
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: webapp/view/NotFound.view.xml
+    visible: true
+  - name: webapp/view/List.view.xml
+    visible: true
+    placeholders:
+      - offset: 1209
+        length: 26
+        placeholder_text: "sort on the server, newest first"
+  - name: webapp/controller/List.controller.js
+    visible: true
+  - name: webapp/view/Detail.view.xml
+    visible: true
+  - name: webapp/controller/Detail.controller.js
+    visible: true
+  - name: test/test.js
+    visible: false

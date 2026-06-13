@@ -1,5 +1,8 @@
 type: framework
 custom_name: 19 · Value Help & Smart Controls
 content:
-  - s01-overview
+  - s01-suggestions
+  - s02-value-help-dialog
+  - s03-value-list-annotations
+  - s04-smart-controls-and-metadata
 is_template_based: false

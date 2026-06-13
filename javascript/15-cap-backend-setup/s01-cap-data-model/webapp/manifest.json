@@ -1,0 +1,11 @@
+{
+  "_version": "1.65.0",
+  "sap.app": { "id": "ui5.sales", "type": "application", "i18n": "i18n/i18n.properties", "title": "{{appTitle}}", "applicationVersion": { "version": "1.0.0" }, "dataSources": { "mainService": { "uri": "/sales/", "type": "OData", "settings": { "odataVersion": "2.0", "localUri": "localService/metadata.xml" } } } },
+  "sap.ui": { "technology": "UI5", "deviceTypes": { "desktop": true, "tablet": true, "phone": true } },
+  "sap.ui5": {
+    "dependencies": { "minUI5Version": "1.120.0", "libs": { "sap.ui.core": {}, "sap.m": {}, "sap.ui.layout": {}, "sap.f": {}, "sap.uxap": {} } },
+    "models": { "i18n": { "type": "sap.ui.model.resource.ResourceModel", "settings": { "bundleName": "ui5.sales.i18n.i18n", "supportedLocales": ["", "de"], "fallbackLocale": "" } }, "ui": { "type": "sap.ui.model.json.JSONModel", "uri": "model/ui.json" }, "": { "dataSource": "mainService", "type": "sap.ui.model.odata.v2.ODataModel" } },
+    "routing": { "config": { "routerClass": "sap.f.routing.Router", "type": "View", "viewType": "XML", "path": "ui5.sales.view", "controlId": "fcl", "async": true, "bypassed": { "target": "notFound" } }, "routes": [ { "name": "list", "pattern": "", "target": "list", "layout": "OneColumn" }, { "name": "detail", "pattern": "orders/{orderId}", "target": ["list", "detail"], "layout": "TwoColumnsMidExpanded" } ], "targets": { "list": { "id": "list", "name": "List", "controlAggregation": "beginColumnPages" }, "detail": { "id": "detail", "name": "Detail", "controlAggregation": "midColumnPages" }, "notFound": { "id": "notFound", "name": "NotFound", "controlAggregation": "midColumnPages" } } },
+    "rootView": { "viewName": "ui5.sales.view.App", "type": "XML", "id": "app" }
+  }
+}

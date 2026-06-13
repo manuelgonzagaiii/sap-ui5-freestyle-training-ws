@@ -1,5 +1,8 @@
 type: framework
 custom_name: 15 · Open-Source Backend with SAP CAP
 content:
-  - s01-overview
+  - s01-cap-data-model
+  - s02-odata-v4-service
+  - s03-connect-the-app
+  - s04-drafts-and-actions
 is_template_based: false

@@ -1,0 +1,17 @@
+const cds = require("@sap/cds");
+
+// Custom logic for the SalesService. Here we implement the bound "setCompleted"
+// action declared in sales-service.cds.
+module.exports = class SalesService extends cds.ApplicationService {
+	init() {
+		const { SalesOrders } = this.entities;
+
+		this.on("setCompleted", SalesOrders, async (req) => {
+			const { orderId } = req.params[req.params.length - 1];
+			await UPDATE(SalesOrders).set({ status: "Completed" }).where({ orderId });
+			return SELECT.one.from(SalesOrders).where({ orderId });
+		});
+
+		return super.init();
+	}
+};

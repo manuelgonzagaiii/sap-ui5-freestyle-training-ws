@@ -1,0 +1,4 @@
+[
+  { "orderId": "SO-1001", "customer": "Atlas Trading", "status": "Open", "amount": "1250.50", "currency": "EUR", "orderDate": "2026-05-12", "priority": "High", "itemCount": 3 },
+  { "orderId": "SO-1002", "customer": "Bluewave Logistics", "status": "In Process", "amount": "8420.00", "currency": "EUR", "orderDate": "2026-05-09", "priority": "Medium", "itemCount": 7 }
+]

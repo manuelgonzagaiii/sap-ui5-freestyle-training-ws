@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog id="viewSettingsDialog" confirm=".onConfirmViewSettings">
+		<sortItems>
+			<ViewSettingsItem key="orderDate" text="Order date" selected="true" />
+			<ViewSettingsItem key="customer" text="Customer" />
+			<ViewSettingsItem key="amount" text="Amount" />
+		</sortItems>
+		<groupItems>
+			<ViewSettingsItem key="status" text="Status" />
+			<ViewSettingsItem key="priority" text="Priority" />
+		</groupItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

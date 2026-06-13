@@ -104,5 +104,5 @@ That is the Fiori master-detail experience, and the list never disappears under 
 `sap.f.FlexibleColumnLayout` and `sap.f.routing.Router` are documented in the SAPUI5
 API Reference and the "Flexible Column Layout" topic at <https://ui5.sap.com/>. The
 FCL routing wiring follows SAP's standard FCL application pattern (from the
-assistant's knowledge of that template, since `UI5/sample-app` itself is
+author's knowledge of that template, since `UI5/sample-app` itself is
 single-column) - verify the column behaviour in the browser.

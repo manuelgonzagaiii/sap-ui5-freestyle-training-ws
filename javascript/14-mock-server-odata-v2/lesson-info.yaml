@@ -1,5 +1,8 @@
 type: framework
 custom_name: 14 · Mock Server & OData V2
 content:
-  - s01-overview
+  - s01-metadata-and-mock-data
+  - s02-start-mock-server
+  - s03-bind-to-odata
+  - s04-create-over-odata
 is_template_based: false

@@ -1,0 +1,9 @@
+{
+  "name": "ui5-sales",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": { "@sap/cds": "^9" },
+  "devDependencies": { "@cap-js/sqlite": "^2", "@ui5/cli": "^4", "ui5-middleware-simpleproxy": "^3", "jest": "^29.3.1" },
+  "scripts": { "watch": "cds watch", "start:ui": "ui5 serve --open index.html", "test": "jest" },
+  "cds": { "requires": { "db": "sqlite" } }
+}

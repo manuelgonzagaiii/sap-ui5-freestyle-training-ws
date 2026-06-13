@@ -1,0 +1,9 @@
+orderId,customer,status,amount,currency,orderDate,priority,itemCount
+SO-1001,Atlas Trading,Open,1250.50,EUR,2026-05-12,High,3
+SO-1002,Bluewave Logistics,In Process,8420.00,EUR,2026-05-09,Medium,7
+SO-1003,Cedar & Co,Completed,540.75,USD,2026-04-28,Low,2
+SO-1004,Delta Manufacturing,Open,15300.00,EUR,2026-05-14,High,12
+SO-1005,Evergreen Retail,Cancelled,320.00,GBP,2026-04-30,Low,1
+SO-1006,Fjord Imports,In Process,6750.25,EUR,2026-05-11,Medium,5
+SO-1007,Granite Supplies,Completed,2890.00,USD,2026-05-02,Medium,4
+SO-1008,Harbor Foods,Open,1180.40,EUR,2026-05-13,High,6

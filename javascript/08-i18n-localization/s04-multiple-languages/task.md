@@ -22,7 +22,7 @@ The naming convention does the magic: `i18n_de.properties` is the German variant
 never change - they still bind `{i18n>pageTitle}` - they just resolve to a different
 file depending on the user's language.
 
-> The German strings here are illustrative (from the assistant's own knowledge of
+> The German strings here are illustrative (from the author's own knowledge of
 > German). For a real release, have translations reviewed by a native speaker - this
 > is exactly the kind of thing the i18n setup makes easy to hand off.
 
@@ -90,5 +90,5 @@ heart of every Fiori app.
 
 `supportedLocales`, `fallbackLocale`, the `_de` bundle convention, `sap-ui-language`
 and `sap-ui-rtl` are documented in the SAPUI5 "Localization" and Walkthrough topics
-at <https://ui5.sap.com/>. The German translations are from the assistant's own
+at <https://ui5.sap.com/>. The German translations are from the author's own
 knowledge - please have them reviewed.
