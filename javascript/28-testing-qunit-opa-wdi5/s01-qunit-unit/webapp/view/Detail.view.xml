@@ -1,0 +1,16 @@
+<mvc:View controllerName="ui5.sales.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:uxap="sap.uxap" xmlns:integration="sap.ui.integration.widgets" xmlns:sales="ui5.sales.control" xmlns:upload="sap.m.upload" displayBlock="true">
+	<uxap:ObjectPageLayout id="objectPage" showTitleInHeaderContent="true">
+		<uxap:headerTitle><uxap:ObjectPageHeader objectTitle="{customer}" objectSubtitle="{orderId}"><uxap:actions><uxap:ObjectPageHeaderActionButton text="{i18n>closeButton}" icon="sap-icon://decline" press=".onClose" /></uxap:actions></uxap:ObjectPageHeader></uxap:headerTitle>
+		<uxap:ObjectPageSection title="{i18n>generalSection}"><uxap:ObjectPageSubSection>
+			<ObjectStatus text="{status}" state="{ path: 'status', formatter: '.formatter.statusState' }" />
+			<Text text="{ parts: ['amount', 'currency'], type: 'sap.ui.model.type.Currency' }" />
+			<sales:Rating value="{itemCount}" max="10" readonly="true" />
+		</uxap:ObjectPageSubSection></uxap:ObjectPageSection>
+		<uxap:ObjectPageSection title="{i18n>insightsSection}"><uxap:ObjectPageSubSection>
+			<integration:Card manifest="cards/ordersCard.json" width="20rem" height="22rem" />
+		</uxap:ObjectPageSubSection></uxap:ObjectPageSection>
+		<uxap:ObjectPageSection title="{i18n>attachmentsSection}"><uxap:ObjectPageSubSection>
+			<upload:UploadSet id="attachments" instantUpload="false" uploadEnabled="true" />
+		</uxap:ObjectPageSubSection></uxap:ObjectPageSection>
+	</uxap:ObjectPageLayout>
+</mvc:View>

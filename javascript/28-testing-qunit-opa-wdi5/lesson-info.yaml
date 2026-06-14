@@ -1,5 +1,8 @@
 type: framework
 custom_name: "28 · Testing: QUnit, OPA5 & wdi5"
 content:
-  - s01-overview
+  - s01-qunit-unit
+  - s02-opa5-integration
+  - s03-page-objects
+  - s04-wdi5-e2e
 is_template_based: false

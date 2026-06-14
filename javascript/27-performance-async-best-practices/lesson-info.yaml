@@ -1,5 +1,8 @@
 type: framework
-custom_name: 27 · Performance & Best Practices
+custom_name: "27 · Performance & Best Practices"
 content:
-  - s01-overview
+  - s01-async-loading
+  - s02-lazy-loading
+  - s03-trim-payload
+  - s04-leaks-and-tools
 is_template_based: false

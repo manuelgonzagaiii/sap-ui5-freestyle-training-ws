@@ -1,5 +1,8 @@
 type: framework
 custom_name: 29 · UI5 Tooling & Build
 content:
-  - s01-overview
+  - s01-ui5-tooling
+  - s02-production-build
+  - s03-transpile-lint
+  - s04-optimization
 is_template_based: false

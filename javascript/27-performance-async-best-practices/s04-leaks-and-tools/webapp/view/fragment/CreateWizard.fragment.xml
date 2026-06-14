@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="wizardDialog" title="{i18n>newOrderTitle}" stretch="true">
+		<Wizard id="createWizard" finish=".onWizardComplete">
+			<WizardStep title="{i18n>customerLabel}" validated="true">
+				<Input value="{create>/customer}" placeholder="{i18n>customerLabel}" />
+			</WizardStep>
+			<WizardStep title="{i18n>amountLabel}" validated="true">
+				<Input value="{create>/amount}" placeholder="{i18n>amountLabel}" />
+				<Input value="{create>/currency}" placeholder="{i18n>currencyLabel}" />
+			</WizardStep>
+		</Wizard>
+		<beginButton><Button text="{i18n>cancelButton}" press=".onCancelWizard" /></beginButton>
+	</Dialog>
+</core:FragmentDefinition>

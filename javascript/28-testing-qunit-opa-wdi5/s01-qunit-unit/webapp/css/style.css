@@ -1,0 +1,12 @@
+.salesPriority {
+	display: inline-block;
+	padding: 0.125rem 0.5rem;
+	border-radius: 0.75rem;
+	font-size: 0.75rem;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.salesPriorityHigh { background-color: var(--sapNegativeColor, #bb0000); }
+.salesPriorityMedium { background-color: var(--sapCriticalColor, #e76500); }
+.salesPriorityLow { background-color: var(--sapPositiveColor, #107e3e); }

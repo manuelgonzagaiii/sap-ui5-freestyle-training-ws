@@ -1,5 +1,8 @@
 type: framework
 custom_name: 30 · Fiori Launchpad & Delivery
 content:
-  - s01-overview
+  - s01-launchpad-registration
+  - s02-intent-navigation
+  - s03-deployment-targets
+  - s04-ship-and-sandbox
 is_template_based: false
