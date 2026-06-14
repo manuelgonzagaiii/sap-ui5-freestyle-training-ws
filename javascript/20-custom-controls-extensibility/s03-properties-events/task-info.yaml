@@ -1,0 +1,68 @@
+type: edu
+custom_name: "Stage 3 - Properties, events and binding"
+files:
+  - name: db/data/ui5.sales-Customers.csv
+    visible: true
+  - name: db/data/ui5.sales-SalesOrderItems.csv
+    visible: true
+  - name: db/data/ui5.sales-SalesOrders.csv
+    visible: true
+  - name: db/schema.cds
+    visible: true
+  - name: package.json
+    visible: true
+  - name: srv/annotations.cds
+    visible: true
+  - name: srv/sales-service.cds
+    visible: true
+  - name: srv/sales-service.js
+    visible: true
+  - name: ui5.yaml
+    visible: true
+  - name: webapp/Component.js
+    visible: true
+  - name: webapp/control/PriorityIndicator.js
+    visible: true
+    placeholders:
+      - offset: 245
+        length: 9
+        placeholder_text: "declare a 'press' event"
+      - offset: 732
+        length: 17
+        placeholder_text: fire the press event
+  - name: webapp/controller/App.controller.js
+    visible: true
+  - name: webapp/controller/Detail.controller.js
+    visible: true
+  - name: webapp/controller/List.controller.js
+    visible: true
+  - name: webapp/i18n/i18n.properties
+    visible: true
+  - name: webapp/i18n/i18n_de.properties
+    visible: true
+  - name: webapp/index.html
+    visible: true
+  - name: webapp/manifest.json
+    visible: true
+  - name: webapp/model/ItemCountType.js
+    visible: true
+  - name: webapp/model/formatter.js
+    visible: true
+  - name: webapp/model/ui.json
+    visible: true
+  - name: webapp/view/App.view.xml
+    visible: true
+  - name: webapp/view/Detail.view.xml
+    visible: true
+  - name: webapp/view/List.view.xml
+    visible: true
+  - name: webapp/view/NotFound.view.xml
+    visible: true
+  - name: webapp/view/fragment/CreateOrder.fragment.xml
+    visible: true
+  - name: webapp/view/fragment/CustomerSelect.fragment.xml
+    visible: true
+  - name: webapp/view/fragment/ViewSettings.fragment.xml
+    visible: true
+  - name: test/test.js
+    visible: false

@@ -1,5 +1,8 @@
 type: framework
 custom_name: 23 · Integration Cards
 content:
-  - s01-overview
+  - s01-card-from-manifest
+  - s02-card-data-service
+  - s03-card-types-header
+  - s04-host-and-actions
 is_template_based: false

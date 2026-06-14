@@ -1,5 +1,8 @@
 type: framework
 custom_name: 21 · Theming & Styling
 content:
-  - s01-overview
+  - s01-theme-and-switch
+  - s02-content-density
+  - s03-custom-css
+  - s04-theming-parameters
 is_template_based: false

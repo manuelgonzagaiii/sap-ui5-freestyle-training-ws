@@ -1,0 +1,43 @@
+{
+	"sap.app": {
+		"id": "ui5.sales.cards.orders",
+		"type": "card",
+		"title": "Recent orders"
+	},
+	"sap.card": {
+		"type": "List",
+		"header": {
+			"title": "Recent orders",
+			"subtitle": "Latest activity"
+		},
+		"content": {
+			"data": {
+				"json": [
+					{
+						"name": "Aurora Retail",
+						"status": "Open",
+						"amount": "1250.00 EUR"
+					},
+					{
+						"name": "Beacon Foods",
+						"status": "In Process",
+						"amount": "880.00 EUR"
+					},
+					{
+						"name": "Cedar Works",
+						"status": "Completed",
+						"amount": "3120.00 EUR"
+					}
+				]
+			},
+			"maxItems": 5,
+			"item": {
+				"title": "{name}",
+				"description": "{status}",
+				"info": {
+					"value": "{amount}"
+				}
+			}
+		}
+	}
+}

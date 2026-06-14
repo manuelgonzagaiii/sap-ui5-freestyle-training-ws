@@ -1,5 +1,8 @@
 type: framework
 custom_name: "26 · Drag & Drop, Uploads, Wizards & Charts"
 content:
-  - s01-overview
+  - s01-drag-and-drop
+  - s02-file-upload
+  - s03-wizard
+  - s04-micro-charts
 is_template_based: false

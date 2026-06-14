@@ -1,5 +1,8 @@
 type: framework
 custom_name: 25 · Accessibility (a11y)
 content:
-  - s01-overview
+  - s01-aria-basics
+  - s02-invisibletext-labelledby
+  - s03-keyboard-fastnav
+  - s04-high-contrast
 is_template_based: false

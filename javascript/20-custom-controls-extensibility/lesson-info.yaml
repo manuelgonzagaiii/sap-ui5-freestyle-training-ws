@@ -1,5 +1,8 @@
 type: framework
 custom_name: 20 · Custom Controls & Extensibility
 content:
-  - s01-overview
+  - s01-extend-control
+  - s02-renderer
+  - s03-properties-events
+  - s04-eventbus-reuse
 is_template_based: false

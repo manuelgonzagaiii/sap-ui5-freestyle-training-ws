@@ -1,5 +1,8 @@
 type: framework
 custom_name: 24 · UI5 Web Components Interop
 content:
-  - s01-overview
+  - s01-two-worlds-wrapper
+  - s02-property-mapping
+  - s03-use-with-binding
+  - s04-events-and-interop
 is_template_based: false

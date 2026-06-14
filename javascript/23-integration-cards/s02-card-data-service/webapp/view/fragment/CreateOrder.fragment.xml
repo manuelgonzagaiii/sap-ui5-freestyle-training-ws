@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<Dialog id="createOrderDialog" title="{i18n>newOrderTitle}">
+		<content>
+			<form:SimpleForm layout="ResponsiveGridLayout" editable="true">
+				<Label text="{i18n>customerLabel}" labelFor="newCustomerInput" required="true" />
+				<Input id="newCustomerInput" value="{create>/customer}" showSuggestion="true" showValueHelp="true" valueHelpRequest=".onCustomerValueHelp" suggestionItems="{ path: '/Customers', templateShareable: false }">
+					<suggestionItems>
+						<core:Item text="{name}" />
+					</suggestionItems>
+				</Input>
+				<Label text="{i18n>amountLabel}" labelFor="newAmountInput" />
+				<Input id="newAmountInput" value="{create>/amount}" />
+				<Label text="{i18n>currencyLabel}" labelFor="newCurrencySelect" />
+				<Select id="newCurrencySelect" selectedKey="{create>/currency}">
+					<core:Item key="EUR" text="EUR" /><core:Item key="USD" text="USD" /><core:Item key="GBP" text="GBP" />
+				</Select>
+			</form:SimpleForm>
+		</content>
+		<beginButton><Button text="{i18n>saveButton}" type="Emphasized" press=".onSaveOrder" /></beginButton>
+		<endButton><Button text="{i18n>cancelButton}" press=".onCancelOrder" /></endButton>
+	</Dialog>
+</core:FragmentDefinition>

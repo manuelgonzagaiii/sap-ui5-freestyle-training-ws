@@ -1,0 +1,41 @@
+{
+	"sap.app": {
+		"id": "ui5.sales.cards.orders",
+		"type": "card",
+		"title": "Recent orders"
+	},
+	"sap.card": {
+		"type": "List",
+		"header": {
+			"type": "Numeric",
+			"title": "Sales orders",
+			"subtitle": "Recent activity",
+			"mainIndicator": {
+				"number": "12",
+				"unit": "open",
+				"state": "Good"
+			}
+		},
+		"content": {
+			"data": {
+				"request": {
+					"url": "/odata/v4/sales/SalesOrders",
+					"parameters": {
+						"$top": "5",
+						"$orderby": "orderDate desc",
+						"$select": "customer,status,amount,currency"
+					}
+				},
+				"path": "/value"
+			},
+			"maxItems": 5,
+			"item": {
+				"title": "{customer}",
+				"description": "{status}",
+				"info": {
+					"value": "{amount} {currency}"
+				}
+			}
+		}
+	}
+}

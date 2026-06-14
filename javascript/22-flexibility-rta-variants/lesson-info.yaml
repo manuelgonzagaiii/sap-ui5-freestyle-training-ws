@@ -1,5 +1,8 @@
 type: framework
 custom_name: "22 · Flexibility, Adaptation & Variants"
 content:
-  - s01-overview
+  - s01-flexibility-stable-ids
+  - s02-runtime-adaptation
+  - s03-variant-management
+  - s04-personalization-p13n
 is_template_based: false

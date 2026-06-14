@@ -1,0 +1,34 @@
+<mvc:View controllerName="ui5.sales.controller.List" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.f" xmlns:sales="ui5.sales.control" displayBlock="true">
+	<f:DynamicPage id="listDynamicPage">
+		<f:title><f:DynamicPageTitle><f:heading><Title text="{i18n>pageTitle}" /></f:heading></f:DynamicPageTitle></f:title>
+		<f:header><f:DynamicPageHeader pinnable="true">
+			<l:Grid defaultSpan="XL3 L3 M6 S12" hSpacing="1" vSpacing="1">
+							<VBox class="sapUiSmallMargin"><Title text="{ui>/kpi/open}" level="H2" /><Text text="{i18n>openLabel}" /></VBox>
+							<VBox class="sapUiSmallMargin"><Title text="{ui>/kpi/inProcess}" level="H2" /><Text text="{i18n>inProcessLabel}" /></VBox>
+							<VBox class="sapUiSmallMargin"><Title text="{ui>/kpi/completed}" level="H2" /><Text text="{i18n>completedLabel}" /></VBox>
+							<VBox class="sapUiSmallMargin"><Title text="{ui>/kpi/revenue}" level="H2" /><Text text="{i18n>revenueLabel}" /></VBox>
+			</l:Grid>
+		</f:DynamicPageHeader></f:header>
+		<f:content>
+			<Table id="ordersTable" items="{ path: '/SalesOrders', parameters: { $count: true, $orderby: 'orderDate desc' } }" growing="true" growingThreshold="20" growingScrollToLoad="true">
+				<headerToolbar><OverflowToolbar>
+					<SearchField search=".onSearch" placeholder="{i18n>searchPlaceholder}" width="18rem" />
+					<ToolbarSpacer />
+					<Button icon="sap-icon://palette" text="{i18n>themeButton}" press=".onToggleTheme" />
+					<Button icon="sap-icon://sort" text="{i18n>sortButton}" press=".onOpenViewSettings" />
+					<Button icon="sap-icon://excel-attachment" text="{i18n>exportButton}" press=".onExport" />
+				</OverflowToolbar></headerToolbar>
+				<columns>
+					<Column><Text text="{i18n>orderCol}" /></Column><Column><Text text="{i18n>customerCol}" /></Column><Column minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>statusCol}" /></Column><Column hAlign="End" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>amountCol}" /></Column><Column minScreenWidth="Desktop" demandPopin="true"><Text text="{i18n>priorityCol}" /></Column>
+				</columns>
+				<items><ColumnListItem type="Navigation" press=".onOrderPress"><cells>
+					<Text text="{orderId}" /><Text text="{customer}" />
+					<ObjectStatus text="{status}" state="{ path: 'status', formatter: '.formatter.statusState' }" />
+					<Text text="{ parts: ['amount', 'currency'], type: 'sap.ui.model.type.Currency', formatOptions: { showMeasure: false } }" />
+					<sales:PriorityIndicator value="{priority}" press=".onPriorityPress" />
+				</cells></ColumnListItem></items>
+			</Table>
+		</f:content>
+		<f:footer><OverflowToolbar><ToolbarSpacer /><Button text="{i18n>createButton}" type="Emphasized" press=".onCreate" /></OverflowToolbar></f:footer>
+	</f:DynamicPage>
+</mvc:View>
